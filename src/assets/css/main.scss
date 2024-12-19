@@ -1,0 +1,34 @@
+@import 'global/null';
+@import 'global/variables';
+@import 'global/fonts';
+
+@import 'styles/header';
+@import 'styles/idea';
+@import 'styles/ourmission';
+@import 'styles/modules';
+@import 'styles/mentors';
+@import 'styles/returnmoney';
+@import 'styles/pricing';
+@import 'styles/turnskills';
+@import 'styles/youpath';
+@import 'styles/footer';
+
+* {
+	font-family: 'Roboto';
+	color: var(--black);
+}
+
+.title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	text-align: center;
+
+	@media (max-width: 980px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 760px) {
+		font-size: 20px;
+	}
+}

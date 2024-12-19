@@ -1,0 +1,146 @@
+.idea {
+	&-zebra {
+		position: relative;
+
+		&-content {
+			border: 1px solid #d9d9d9;
+			border-radius: 10px;
+			margin: 0 160px;
+			padding: 100px 60px;
+			background: var(--white);
+
+			@media (max-width: 980px) {
+				margin: 0 40px;
+				padding: 40px 30px;
+			}
+
+			@media (max-width: 760px) {
+				margin: 0 10px;
+				padding: 20px 15px;
+			}
+		}
+
+		&-title {
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 120%;
+			text-align: center;
+			color: var(--black);
+			margin-bottom: 35px;
+
+			@media (max-width: 980px) {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+
+			@media (max-width: 760px) {
+				font-size: 20px;
+			}
+		}
+
+		&-text {
+			margin-top: 20px;
+		}
+
+		&-black {
+			position: absolute;
+			height: 50%;
+			width: 100%;
+			z-index: -1;
+			bottom: -1px;
+			background: #000;
+		}
+	}
+
+	&-unique {
+		background: #000;
+
+		&-title {
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 120%;
+			text-align: center;
+			color: var(--white);
+			padding: 70px 40px 0 40px;
+
+			@media (max-width: 980px) {
+				font-size: 24px;
+			}
+
+			@media (max-width: 760px) {
+				font-size: 20px;
+			}
+		}
+
+		&-cards {
+			width: 100%;
+			padding: 60px 40px 70px 40px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			@media (max-width: 1380px) {
+				width: 740px;
+				gap: 20px;
+				margin: auto;
+			}
+
+			@media (max-width: 760px) {
+				margin: 0 10px;
+				flex-wrap: nowrap;
+				flex-direction: column;
+				width: initial;
+				align-items: center;
+				padding: 30px 0;
+			}
+		}
+
+		&-card {
+			border-radius: 10px;
+			padding: 30px;
+			width: 318px;
+			height: 270px;
+			background: var(--white);
+
+			@media (max-width: 760px) {
+				padding: 15px;
+				height: auto;
+				width: auto;
+                max-width: 500px;
+			}
+
+			&-img {
+				width: 40px;
+				height: 40px;
+			}
+
+			&-title {
+				margin-top: 30px;
+				font-weight: 700;
+				font-size: 21px;
+				line-height: 120%;
+				color: var(--black);
+
+				@media (max-width: 980px) {
+					font-size: 20px;
+				}
+
+				@media (max-width: 760px) {
+					font-size: 18px;
+				}
+			}
+
+			&-text {
+				margin-top: 15px;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 140%;
+				color: var(--black-second);
+
+				@media (max-width: 760px) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

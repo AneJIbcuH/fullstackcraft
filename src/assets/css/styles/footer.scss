@@ -1,0 +1,88 @@
+.footer {
+	padding: 70px 40px 70px;
+	background: #000;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: relative;
+
+	@media (max-width: 980px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 35px 20px;
+	}
+
+	&-header {
+		position: absolute;
+		bottom: 70px;
+		left: 50%;
+		transform: translate(-50%);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 399px;
+
+		@media (max-width: 980px) {
+			position: initial;
+			transform: none;
+            width: auto;
+		}
+
+		&-name {
+			color: var(--white);
+			font-weight: 700;
+			font-size: 36px;
+			width: 100%;
+			text-align: center;
+
+			@media (max-width: 980px) {
+				font-size: 24px;
+			}
+
+			@media (max-width: 760px) {
+				font-size: 20px;
+			}
+		}
+
+		&-point {
+			margin-top: 59px;
+			color: var(--white);
+
+			@media (max-width: 980px) {
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&-address {
+		width: 209px;
+
+		@media (max-width: 980px) {
+			text-align: center;
+			margin: 30px 0;
+			width: auto;
+		}
+
+		&-number {
+			color: var(--white);
+		}
+
+		&-street {
+			margin-top: 26px;
+			color: var(--white);
+
+            @media (max-width: 980px) {
+                text-align: center;
+                margin: 10px;
+                width: auto;
+            }
+		}
+	}
+
+	&-mail {
+		color: var(--white);
+	}
+}

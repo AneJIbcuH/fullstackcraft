@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+html,
+body {
+	min-width: 360px;
+}
+body {
+	line-height: 1.4;
+}
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+//::-webkit-scrollbar {
+//	height: 3px;
+//	width: 3px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//	background-color: #eaeaea;
+//	border: 0;
+//	border-radius: 20px;
+//}
+//
+//::-webkit-scrollbar-track {
+//	background: #fff;
+//}
